@@ -1,0 +1,12 @@
+header.header 
+  .wrapper 
+    .header-top  
+      a.header-logo(href="index.html")
+        img(srcSet="../images/Heling..png 2x", alt="") 
+      nav.header-menu
+        ul.menu-list 
+          each val in[{class: 'active-menu', href: 'index.html' , title: 'Home '},{href: '#' , title: 'Projects'},{href: '#' , title: 'Designers'},{href: '#' , title: 'Articles'}]
+            li.list-item 
+              a.item-link(class= val.class, href=val.href)= val.title
+      a.header-contat(href="") Contact
+img.header-border(srcSet="../images/border.png 2x", alt="")

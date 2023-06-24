@@ -1,0 +1,49 @@
+.header
+  position: sticky
+  top: 0
+  left: 0
+  z-index: 999
+  width: 100%
+  min-height: 61px
+  padding: 30px 0px
+  background: #222120
+
+.header-top 
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.menu-list 
+  display: flex
+  justify-content: space-between
+  gap: 50px
+  .item-link
+    font-size: 18px
+    font-family: $primary-font
+    opacity: 0.4
+    color: $secondary-color
+    text-transform: lowercase
+    position: relative
+  .active-menu
+    opacity: 1
+  .active-menu:before
+    content: ''
+    width: 5px 
+    height: 5px 
+    position: absolute
+    top: 50%
+    left: -40%
+    transform: translate(-50%, -50%)
+    border-radius: 50%
+    background-color: #fff
+
+.header-contat
+  color: #fff
+  font-size: 24px
+  border-bottom: 1px solid #fff
+  font-family: $section-font
+
+.header-border
+  background-color: $primary-color
+  position: fixed
+  z-index: 999999
