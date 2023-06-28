@@ -1,0 +1,94 @@
+.footer
+  background-color: #222120
+  color: #fff
+  padding-top: 70px
+
+.footer-scroll
+  display: block
+  button
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    color: #fff
+    span
+      opacity: 0.4
+      font-size: 20px
+      margin-top: 10px
+  
+.footer-content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+
+.content-left-footer
+  width: 50%
+  .footer-heading
+    font-size: 30px
+    margin-bottom: 70px
+  .footer-contact 
+    font-size: 30px
+    margin-top: 50px
+    padding-left: 20px
+    position: relative
+  .footer-contact:before
+    content: ''
+    position: absolute
+    width: 10px 
+    height: 10px
+    background-color: #fff
+    border-radius: 100%
+    left: 0
+    top: 50%
+    transform: translateY(-100% )
+.footer-text
+  font-size: 70px
+  color: #F8F3ED
+  margin-top: 20px
+  display: block
+  opacity: 0.4
+
+.footer-bootom 
+  padding-top: 150px
+  display: flex
+  justify-content: space-between
+  span
+    opacity: 0.4
+    font-size: 24px
+
+.link-home
+  display: none
+
+@media screen and (max-width: 1023.98px) 
+  .footer
+    padding-top: 50px
+    
+  .footer-scroll button
+    display: none
+
+  .link-home
+    display: flex
+    justify-content: center
+
+  .footer-content
+    margin-top: 80px
+
+  .content-left-footer
+    width: 100%
+    .footer-contact
+      font-size: 24px
+    .footer-text
+      font-size: 36px
+    
+  .content-image-footer
+    margin-top: 110px
+
+  .footer-bootom
+    padding-top: 100px
+    span
+      font-size: 16px
+
+  .bottom-link
+    display: none
